@@ -1,4 +1,4 @@
-package ca.bcit.comp3760.assign1;
+package ca.bcit.comp3760.lab01;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ public class JobAssignmentFinderDriver
         final JobAssignmentFinder test;
         final List<Integer> maxAssign;
 
-        f.readDataFile("./data/" + filename);
+        f.readDataFile("./data/lab01/" + filename);
 
         System.out.printf("File: %s\n", filename);
         maxAssign = f.getMaxAssignment();

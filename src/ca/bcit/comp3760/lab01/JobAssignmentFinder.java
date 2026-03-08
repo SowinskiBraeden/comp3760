@@ -1,4 +1,4 @@
-package ca.bcit.comp3760.assign1;
+package ca.bcit.comp3760.lab01;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

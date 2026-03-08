@@ -1,4 +1,4 @@
-package ca.bcit.comp3760.assign2;
+package ca.bcit.comp3760.lab02;
 
 import java.util.ArrayList;
 
