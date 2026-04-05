@@ -241,8 +241,11 @@ public class JobAssignmentFinder {
 
 	public ArrayList<Integer> getGreedyAssignment()
 	{
-		ArrayList<Integer> assignment = new ArrayList<Integer>();
-		boolean[] assignedJobs = new boolean[this.problemSize];
+		final ArrayList<Integer> assignment;
+		final boolean[] assignedJobs;
+
+		assignment   = new ArrayList<>();
+		assignedJobs = new boolean[this.problemSize];
 
 		for (int person = 0; person < this.problemSize; person++)
 		{
@@ -267,7 +270,7 @@ public class JobAssignmentFinder {
 
 	public int greedyAssignmentTotalValue()
 	{
-		ArrayList<Integer> assignment = getGreedyAssignment();
+		final ArrayList<Integer> assignment = getGreedyAssignment();
 		return checkValueOfAssignment(assignment, this.benefitMatrix);
 	}
 }
