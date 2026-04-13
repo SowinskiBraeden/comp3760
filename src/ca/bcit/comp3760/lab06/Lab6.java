@@ -38,11 +38,6 @@ public class Lab6
     {
         final long[][] table;
 
-        if (m < 0 || n < 0)
-        {
-            throw new IllegalArgumentException("m and n must be non-negative");
-        }
-
         table = new long[m + 1][n + 1];
 
         for (int row = 0; row <= m; ++row)
